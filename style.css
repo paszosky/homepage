@@ -1,15 +1,54 @@
 body {
-	background: salmon;
-}
-
-h1 {
-	color: tomato;
-}
-
-h2 {
-	color: #1460aa;
-}
-
-p {
-	color: darkblue;
-}
+	background: #fefefe;
+	color: #333;
+  }
+  
+  .diaryHeader, .sectionHeader{
+	  color: #1460aa;
+  }
+  
+  .paragraph {
+	
+	background: #f6f5ae;
+  }
+  
+  .heading {
+	color: #00487C;
+	height: 40vh;
+  }
+  
+  thirdHeader {
+	color: #0496FF;
+  }
+  
+  .link {
+	color: #1A936F;
+  }
+  
+  .main {
+	width: 100%;
+	max-width: 700px;
+	margin: 20px auto;
+  }
+  
+  .about {
+	color: #564138;
+	background: #f5f749;
+	border: 3px solid #f24236;
+	padding: 16px;
+	border-radius: 30px;
+  }
+  
+  section {
+	display: block;
+  }
+  
+  .box {
+	width: 100px;
+	height: 100px;
+	background: #f24236;
+	padding: 10px;
+	border: 10px solid #564138;
+	margin: 10px;
+	box-sizing: border-box;
+  }
