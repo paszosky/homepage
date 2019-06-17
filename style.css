@@ -9,7 +9,6 @@ body {
   
   .paragraph {
 	
-	background: #f6f5ae;
   }
   
   .heading {
@@ -29,26 +28,81 @@ body {
 	width: 100%;
 	max-width: 700px;
 	margin: 20px auto;
+	padding-top: 50px;
   }
   
   .about {
 	color: #564138;
-	background: #f5f749;
-	border: 3px solid #f24236;
-	padding: 16px;
-	border-radius: 30px;
+	background: rgba(204, 204, 204, 0.925);
+	padding: 10px;
+	/* overflow: hidden; */
   }
   
   section {
 	display: block;
   }
-  
-  .box {
+
+  .boxSticky {
 	width: 100px;
+	height: 100px;
+	background: yellow;
+	padding: 10px;
+	border: 10px solid #564138;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+  }
+  
+  .box, .boxTest {
+	width: 150px;
 	height: 100px;
 	background: #f24236;
 	padding: 10px;
 	border: 10px solid #564138;
-	margin: 10px;
 	box-sizing: border-box;
+	position: absolute;
+	top: 20px;
+	left: 50%;
   }
+
+  .box {
+	z-index: 5;
+  }
+
+  .boxTest {
+	top: 60px;
+	left: 60%;
+	background: yellow;
+	z-index: 4;
+	position: fixed;
+  }
+
+.top {
+	  position: fixed;
+	  bottom: 100px;
+	  right: 20px;
+	  box-sizing: border-box;
+	  width: 80px;
+	  height: 80px;
+	  text-align: center;
+	  background: #ccc;
+	  text-decoration: none;
+  }
+
+.navigation {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 16px;
+	background: #fff;
+}
+
+.imgWinnica {
+	width: 100%;
+	max-width: 200px;
+	display: block;
+	float: left;
+	margin: 15px 15px 10px 0;
+}
