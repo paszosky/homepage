@@ -1,48 +1,64 @@
 body {
 	background: #fefefe;
 	color: #333;
-  }
-  
-  .diaryHeader, .sectionHeader{
-	  color: #1460aa;
-  }
-  
-  .paragraph {
-	
-  }
-  
-  .heading {
+}
+
+.diaryHeader, .sectionHeader {
+	color: #1460aa;
+}
+
+.heading {
 	color: #00487C;
 	height: 40vh;
-  }
-  
-  thirdHeader {
+}
+
+thirdHeader {
 	color: #0496FF;
-  }
-  
-  .link {
-	color: #1A936F;
-  }
-  
-  .main {
+}
+
+.main {
 	width: 100%;
 	max-width: 700px;
 	margin: 20px auto;
 	padding-top: 50px;
-  }
-  
-  .about {
-	color: #564138;
+}
+
+.about {
 	background: rgba(204, 204, 204, 0.925);
 	padding: 10px;
 	/* overflow: hidden; */
-  }
-  
-  section {
-	display: block;
-  }
+}
 
-  .boxSticky {
+.about__header {
+	color: #564138;
+}
+
+.about__link {
+	color: #1A936F;
+	text-decoration: none;
+}
+
+.about__paragraph {
+	padding: 16px;
+}
+
+.about__paragraph--color {
+	color: red;
+}
+
+.about__image {
+	width: 100%;
+	max-width: 200px;
+	display: block;
+	float: left;
+	margin: 15px 15px 10px 0;
+}
+
+section {
+	display: block;
+}
+
+.boxSticky {
 	width: 100px;
 	height: 100px;
 	background: yellow;
@@ -51,9 +67,9 @@ body {
 	box-sizing: border-box;
 	position: sticky;
 	top: 0;
-  }
-  
-  .box, .boxTest {
+}
+
+.box, .boxTest {
 	width: 150px;
 	height: 100px;
 	background: #f24236;
@@ -63,31 +79,31 @@ body {
 	position: absolute;
 	top: 20px;
 	left: 50%;
-  }
+}
 
-  .box {
+.box {
 	z-index: 5;
-  }
+}
 
-  .boxTest {
+.boxTest {
 	top: 60px;
 	left: 60%;
 	background: yellow;
 	z-index: 4;
 	position: fixed;
-  }
+}
 
 .top {
-	  position: fixed;
-	  bottom: 100px;
-	  right: 20px;
-	  box-sizing: border-box;
-	  width: 80px;
-	  height: 80px;
-	  text-align: center;
-	  background: #ccc;
-	  text-decoration: none;
-  }
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	background: #ccc;
+	text-decoration: none;
+}
 
 .navigation {
 	position: fixed;
@@ -99,10 +115,3 @@ body {
 	background: #fff;
 }
 
-.imgWinnica {
-	width: 100%;
-	max-width: 200px;
-	display: block;
-	float: left;
-	margin: 15px 15px 10px 0;
-}
