@@ -6,17 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<title>Document - Github</title>
+	<link href="normalize.css" res="stylesheet" type="text/css">
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header class="navigation">
-		<a class="navigation__link" href="index.html">Strona główna</a>
-		<a class="navigation__link" href="podstrona.html">Podstrona</a>
+	<header class="main-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+				<li></li>
+			</ul>
+		</nav>
 	</header>
 	<main id="top" class="main">
-		<header class="heading">
-			<h1 class="mainHeader">Pasza - strona domowa</h1>
+		<header class="header">
+			<h1 class="header__title">Pasza - strona domowa</h1>
 		</header>
 
 		<section class="about">
@@ -32,58 +38,108 @@
 			</p>
 			
 			<p class="about__paragraph about__paragraph--color about__paragraph--js">Testuję modyfikator!</p>
+			<section class="hobby">
+				<h3>Moje hobby</h3>
+				<ul class="hobby__list">
+					<li>Nagrywanie szkolenia</li>
+					<li>Rysowanie</li>
+					<li>Spanie</li>
+				</ul>
+			</section>
+			<section class="hobby">
+					<h3>Plan</h3>
+					<ol>
+						<li>Otwórz przeglądarkę</li>
+						<li>Wejdź na stronę</li>
+						<li>Ucz się</li>
+					</ol>
+				</section>
 		</section>
 
 		<section class="diary">
-			<h2 class="diaryHeader">Pamiętniczek</h2>
-			<section>
-				<h3>Jak tworzyć prawidłowego HTML'a</h3>
-				<p>Tworzenie zgodnego ze standardami HTML'a to sztuka, którą do perfekcji opanowało niewielu. Jeśli
+			<h2 class="diary__header">Pamiętniczek</h2>
+			<section class="day">
+				<h3 class="day__header">Jak tworzyć prawidłowego HTML'a</h3>
+				<p class="day__paragraph">Tworzenie zgodnego ze standardami HTML'a to sztuka, którą do perfekcji opanowało niewielu. Jeśli
 					chcesz stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego
 					czasu...<br>
-					<a href="podstrona.html">Przejdź do artykułu</a>
+					<a href="podstrona.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
-			<section>
-				<h3 class="thirdHeader">Czy nagrywanie szkolenia to prosta sprawa 🤩?</h3>
-				<p>Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
+			<section class="day">
+				<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa 🤩?</h3>
+				<p class="day__paragraph">Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
 					zajęło mi dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi się
 					wytworzyć schemat nagrywania, który każdego dnia przybliża mnie do skończenia pracy.<br>
-					<a href="art2.html">Przejdź do artykułu</a>
+					<a href="art2.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
-			<section>
-				<h3 class="thirdHeader">Kolejny wpis</h3>
-				<p>Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
+			<section class="day">
+				<h3 class="day__header">Trzeci wpis</h3>
+				<p class="day__paragraph">Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
 					zajęło mi dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi się
 					wytworzyć schemat nagrywania, który każdego dnia przybliża mnie do skończenia pracy.<br>
-					<a href="art3.html">Przejdź do artykułu</a>
+					<a href="art3.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
-			<section>
-				<h3>Jak tworzyć prawidłowego HTML'a</h3>
-				<p>Tworzenie zgodnego ze standardami HTML'a to sztuka, którą do perfekcji opanowało niewielu. Jeśli
+			<section class="day">
+				<h3 class="day__header">Czwarty wpis</h3>
+				<p class="day__paragraph">Tworzenie zgodnego ze standardami HTML'a to sztuka, którą do perfekcji opanowało niewielu. Jeśli
 					chcesz stać się częścią tej grupy, musisz wykazać się otwartą głową i dużą ilością wolnego
 					czasu...<br>
-					<a href="podstrona.html">Przejdź do artykułu</a>
+					<a href="podstrona.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
-			<section>
-				<h3 class="thirdHeader">Czy nagrywanie szkolenia to prosta sprawa 🤩?</h3>
-				<p>Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
+			<section class="day">
+				<h3 class="day__header">Piąty wpis</h3>
+				<p class="day__paragraph">Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
 					zajęło mi dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi się
 					wytworzyć schemat nagrywania, który każdego dnia przybliża mnie do skończenia pracy.<br>
-					<a href="art2.html">Przejdź do artykułu</a>
+					<a href="art2.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
-			<section>
-				<h3 class="thirdHeader">Kolejny wpis</h3>
-				<p>Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
+			<section class="day">
+				<h3 class="day__header">Szósty wpis</h3>
+				<p class="day__paragraph">Na początku myślałem, że całe szkolenie nagram w 2 tygodnie (o ja naiwny!). Samo planowanie rzeczy
 					zajęło mi dużo więcej! Na szczęście dzięki wsparciu bliskich i sporej motywacji udało mi się
 					wytworzyć schemat nagrywania, który każdego dnia przybliża mnie do skończenia pracy.<br>
-					<a href="art3.html">Przejdź do artykułu</a>
+					<a href="art3.html" class="day__link">Przejdź do artykułu</a>
 				</p>
 			</section>
+		</section>
+		<section class="glossary">
+			<dl>
+				<dt>CSS</dt>
+				<dd>Kaskadowe arkusze stylów</dd>
+				<dt>HTML</dt>
+				<dd>Język znaczników html. Szkielet strony z treścią.</dd>
+				<dt>JavaScript</dt>
+				<dt>ES6</dt>
+				<dd>to nie Java</dd>
+			</dl>
+		</section>
+		<section class="data">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Imię</th>
+						<th>Ocena</th>
+						<th>Data</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Pasza</td>
+						<td>4</td>
+						<td>23.06.2019</td>
+					</tr>
+					<tr>
+						<td>Andrzej</td>
+						<td>5</td>
+						<td>24.06.2019</td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 	</main>
 	<footer>

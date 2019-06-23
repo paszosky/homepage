@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    background: #2E2240;
+    color: $fff;
+}
+
+.flex {
+    border: solid 4px #EE0C21;
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+.flex__item {
+    border: 3px solid #fff;
+    padding: 16px;
+    text-align: center;
+    background: #FFC835;
+    color: #642677;
+    font-weight: bold;
+    font-size: 20px;
+    width: 350px;
+    order: 2;
+}
+
+.flex__item--bigger {
+    font-size: 50px;
+}
+
+.flex__item--centered {
+    align-self: center;
+    order: 1;
+}
