@@ -78,7 +78,14 @@ const button = document.querySelector('.header__button--js');
 // console.log(button);
 button.addEventListener('click', () => {
     // console.log('click from arrow, hej');
-    // document.querySelector('.header__title--js').innerHTML = "Nikt się nie spodziewał hiszpańskiej inkwizycji!";
+    // document.querySelector('.header__title--js').innerHTML = "click, click...";
     const header = document.querySelector('.header__title--js');
-    header.innerHTML = "click, click...";
+    header.innerHTML = "Nikt się nie spodziewał hiszpańskiej inkwizycji!";
+    header.classList.add('header__title--red');
 });
+
+const btnNav = document.querySelector('.navigation__switcher--js');
+    btnNav.addEventListener('click', () => {
+        const mobileNav = document.querySelector('.navigation__list--js');
+        mobileNav.classList.toggle('navigation__list--visible');
+})

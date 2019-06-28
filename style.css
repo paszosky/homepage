@@ -12,9 +12,13 @@ body {
 	color: #333;
 }
 
-.header_title {
+.header__title {
 	color: #00487C;
 	margin-bottom: 48px;
+}
+
+.header__title--red{
+	color: darkred;
 }
 
 .main {
@@ -121,7 +125,8 @@ body {
 }
 
 .navigation__link {
-	color: #1A936F;
+	color: #fff;
+	text-decoration: none;
 }
 
 section {
@@ -192,10 +197,35 @@ section {
 	.grid {
 		grid-template-columns: 1fr;
 	}
+
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+
+	.navigation__list--visible {
+		display: flex;
+	}
+
+	.navigation__switcher {
+		border: none;
+		background: none;
+		font-size: 20px;
+	}
+
+	.main {
+		padding-top: 20px;
+	}
 }
 
 @media (min-width: 900px) {
 	.main {
 		max-width: 850px;
+	}
+}
+
+@media (min-width: 641px) {
+	.navigation__switcher {
+		display: none;
 	}
 }
