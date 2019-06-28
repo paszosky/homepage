@@ -61,3 +61,9 @@ console.log(calculateFat(5));
 
 const calculateShort = x => (x+3)*7;
 console.log(`Najkrótsza Fat ${calculateShort(5)}`);
+
+const welcome = (name, age) => {
+    console.log(`Witaj ${name}, masz ${age} lat.`);
+}
+
+welcome('Andrzej', 45);
