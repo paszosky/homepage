@@ -67,3 +67,18 @@ const welcome = (name, age) => {
 }
 
 welcome('Andrzej', 45);
+
+
+function handleClick (e) {
+    console.log(e);
+    console.log('click, click...');
+}
+
+const button = document.querySelector('.header__button--js');
+// console.log(button);
+button.addEventListener('click', () => {
+    // console.log('click from arrow, hej');
+    // document.querySelector('.header__title--js').innerHTML = "Nikt się nie spodziewał hiszpańskiej inkwizycji!";
+    const header = document.querySelector('.header__title--js');
+    header.innerHTML = "click, click...";
+});
