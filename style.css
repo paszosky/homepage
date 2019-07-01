@@ -8,7 +8,8 @@ html {
 
 body {
 	/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,112,152,1) 48%, rgba(0,212,255,1) 100%); */
-    min-height: 100vh;
+	background: lightgoldenrodyellow;
+	min-height: 100vh;
 	color: #333;
 }
 
@@ -63,16 +64,49 @@ body {
 	padding: 16px;
 }
 
+.day:first-child {
+	border-top: 2px solid #ccc;
+}
+
+.day:last-child {
+	border-bottom: 2px solid gray;
+}
+
 .day__header {
 	margin: 0 0 16px;
 	color: #0496FF;
 	font-size: 20px;
 }
 
+.day__header::before {
+	/* content: " - "; */
+	content: "   ";
+	display: inline-block;
+	background: tomato;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.day__header::after {
+	content: "";
+	display: inline-block;
+	background: green;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-left: 8px;
+}
+
 .day__paragraph {
 	line-height: 24px;
 	padding: 0;
 	margin: 0;
+}
+
+.day__header:not(.day__header--special) {
+	text-decoration: underline;
 }
 
 .day__link {
@@ -116,6 +150,10 @@ body {
 	margin-right: 8px;
 }
 
+.navigation__item:hover {
+	background: burlywood;
+}
+
 .navigation__list {
 	list-style: none;
 	padding: 0;
@@ -127,6 +165,18 @@ body {
 .navigation__link {
 	color: #fff;
 	text-decoration: none;
+}
+
+.navigation__link:visited {
+	color: #ccc;
+}
+
+.navigation__link:hover {
+	color: hotpink;
+}
+
+.focus:focus {
+	border: 3px solid red;
 }
 
 section {
@@ -211,10 +261,17 @@ section {
 		border: none;
 		background: none;
 		font-size: 20px;
+		position: absolute;
+		top: 16px;
+		left: 16px;
 	}
 
 	.main {
 		padding-top: 20px;
+	}
+
+	.main-header {
+		min-height: 48px;
 	}
 }
 

@@ -88,4 +88,10 @@ const btnNav = document.querySelector('.navigation__switcher--js');
     btnNav.addEventListener('click', () => {
         const mobileNav = document.querySelector('.navigation__list--js');
         mobileNav.classList.toggle('navigation__list--visible');
+        if (mobileNav.classList.contains('navigation__list--visible')) {
+            btnNav.innerHTML = "A";
+        } else {
+            btnNav.innerHTML = "X";
+        }
+        
 })
